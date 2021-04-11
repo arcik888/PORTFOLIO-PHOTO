@@ -1,0 +1,35 @@
+
+<div id="menu">
+
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-outline-primary" id="dropdownBasic1">Główna</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Portfolio</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button *ngFor="let cat of category" ngbDropdownItem>{{cat.categoryName}}</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-outline-primary" id="dropdownBasic1">Oferta</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-outline-primary" id="dropdownBasic1">Kontakt</button>
+        </div>
+    </div>
+
+</div>
+
+
